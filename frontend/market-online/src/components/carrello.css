@@ -1,0 +1,102 @@
+.carrello {
+    font-family: 'Noto Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 23%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+    transition: width 0.3s;
+    border-left: 1px solid;
+    border-color: #22973d;
+}
+.carrello .totale{
+    display: flex;
+    flex: row;
+    padding-top: 10%;
+    color: #006400;
+}
+.carrello .totale .tot{
+    padding-right: 69%;
+}
+
+
+.carrello h3 {
+    color: #006400;
+    margin-bottom: 15%;
+    padding-top: 15%;
+    padding-left: 0;
+}
+
+.carrello .lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carrello .prodotto {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    border-bottom: 1px solid lightgray; /* Usa il colore lightgray invece di specificare il colore */
+    width: 100%; /* Imposta la larghezza al 100% per riempire l'intera riga */
+    box-sizing: border-box; /* Assicurati che il bordo sia incluso nella larghezza dell'elemento */
+}
+
+.carrello .lista img {
+    min-width: 25%;
+    height: auto;
+}
+
+.carrello .prodotto img {
+    max-width: 50px; /* Regola la larghezza massima dell'immagine del prodotto */
+    height: auto;
+    padding-right: 15%;
+}
+.carrello .prodotto .name{
+    padding-right: 20%;
+}
+.carrello .prodotto p {
+    width: 15%;
+    color: #006400;
+}
+.carrello .prodotto .quantity{
+    width: 5%;
+    font-size: small;
+}
+
+
+.carrello button {
+    margin-top: 10%;
+    padding: 10px;
+    background-color: #55cc55;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    height: auto;
+    border-radius: 0;
+}
+
+.carrello button:hover {
+    background-color: #22973d;
+}
+
+.carrello .return{
+    color: #55cc55;
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 8%;
+    height: 8%;
+}
+
+.carrello .return:hover{
+    color: #22973d;
+}
