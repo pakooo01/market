@@ -62,7 +62,7 @@ export default function Carrello({ onClose }) {
       });
   
       const data = await res.json();
-      console.log('Checkout Response:', data);
+      console.log('checkout Response:', data);
   
       if (data.url) {
         window.location.href = data.url;

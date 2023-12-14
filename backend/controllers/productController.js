@@ -157,6 +157,7 @@ module.exports.removeFromCart = async (req, res) => {
 
   module.exports.removeAllFromCart = async (req, res) => {
     try {
+      console.log('andatooo')
       const { userId } = req.params;
   
       // Verifica se l'utente esiste
@@ -177,4 +178,4 @@ module.exports.removeFromCart = async (req, res) => {
       res.status(500).json({ error: `Errore durante la rimozione dal carrello: ${error.message}` });
     }
   };
-    
+  
